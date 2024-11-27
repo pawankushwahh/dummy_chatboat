@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Club Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Video background element -->
+    <video id="background-video" autoplay loop muted>
+        <source src="bg - Copy.mp4" type="video/mp4">
+        <!-- Fallback for browsers that do not support video -->
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Chatbot Container -->
+    <div id="chat-container">
+        <h2>AI Club Chatbot</h2>
+        <div id="chat-box">
+            <div id="chat-output"></div>
+            <div id="chat-input-container">
+                <select id="question-dropdown">
+                    <option value="" disabled selected>Choose an important question...</option>
+                    <option value="what is the ai club">What is the AI Club?</option>
+                    <option value="how can i join">How can I join the AI Club?</option>
+                    <option value="membership fee">Is there a membership fee?</option>
+                    <option value="who are the coordinators">Who are the coordinators?</option>
+                    <option value="do you host guest lectures">Do you host guest lectures?</option>
+                </select>
+                <input type="text" id="user-input" placeholder="Type your question...">
+                <button id="ask-button">Ask</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
